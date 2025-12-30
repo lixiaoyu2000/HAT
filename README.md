@@ -1,5 +1,5 @@
 # HAT
-This is Official Repo For AAAI 2026 Accepted Paper "Rethinking the Spatio-Temporal Alignment of End-to-End 3D Perception"
+This is Official Repo For AAAI 2026 Accepted Paper "**Rethinking the Spatio-Temporal Alignment of End-to-End 3D Perception**"
 
 ![comparison](docs/HAT_framework_fig.jpg)
 
@@ -12,7 +12,7 @@ This is Official Repo For AAAI 2026 Accepted Paper "Rethinking the Spatio-Tempor
 ## News
 
 - 2025-12-30. We release the [paper](https://arxiv.org/abs/2512.23635). Welcome to follow.
-- 2025-11-08. HAT is accepted at AAAI 2026.
+- 2025-11-08. HAT is accepted at AAAI 2026. 🎉
 
 ## TODO list
 
