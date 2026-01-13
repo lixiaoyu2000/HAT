@@ -11,12 +11,13 @@ This is Official Repo For AAAI 2026 Accepted Paper "**Rethinking the Spatio-Temp
 
 ## News
 
+- 2026-01-13. We release the codes of DiffusionDrive-HAT on the nuScenes. Welcome to follow.
 - 2025-12-30. We release the [paper](https://arxiv.org/abs/2512.23635). Welcome to follow.
 - 2025-11-08. HAT is accepted at AAAI 2026. 🎉
 
 ## TODO list
 
-- [ ] Release SparseDrive-HAT and DiffusionDrive-HAT code on nuScenes.
+- [ ] Release the second-stage codes of SparseDrive-HAT on nuScenes.
 - [ ] Release Checkpoints of SparseDrive-HAT and DiffusionDrive-HAT
 
 ## Abstract
@@ -69,6 +70,37 @@ When semantics are corrupted (nuScenes-C), the enhancement of motion modeling by
 | SimPB       | 58.6  | 47.9  | **0.54** | **0.32** | 0.22   |
 | **SimPB-HAT**      | **59.0** *(+0.4)* | **48.8** *(+0.9)* | 0.55   | 0.33   | **0.21** |
 
+# Getting Started
+
+## DiffusionDrive-HAT
+
+### Environment Setup
+
+Please follow the official [DiffusionDrive](https://github.com/hustvl/DiffusionDrive) repository for environment configuration.
+
+### Training and Evaluation
+
+The training procedure is the same as the original DiffusionDrive. The only difference is using the HAT config files:
+
+**First Stage (SparseDrive-HAT):**
+```
+cd DiffusionDrive
+bash ./tools/dist_train.sh projects/configs/sparsedrive_configs/sparsedrive_small_stage1_hat.py 8 --deterministic
+```
+
+**Second Stage (DiffusionDrive-HAT):**
+```
+cd DiffusionDrive
+bash ./tools/dist_train.sh projects/configs/diffusiondrive_configs/diffusiondrive_small_stage2_hat.py 8 --deterministic
+```
+
+> *Please don't forget to load the weights from the first stage of training.*
+
+**Evaluation (DiffusionDrive-HAT):**
+```
+cd DiffusionDrive
+bash ./tools/dist_test.sh projects/configs/diffusiondrive_configs/diffusiondrive_small_stage2_hat.py ckpt/diffusiondrive_stage2_hat.pth 8 --deterministic --eval bbox
+```
 
 ## Contact
 
