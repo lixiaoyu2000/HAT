@@ -1,0 +1,147 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# C extensions
+*.so
+*.o
+
+# Distribution / packaging
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Wheel files
+*.whl
+
+# PyInstaller
+*.manifest
+*.spec
+
+# Installer logs
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Unit test / coverage reports
+htmlcov/
+.tox/
+.nox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+*.py,cover
+.hypothesis/
+.pytest_cache/
+
+# Translations
+*.mo
+*.pot
+
+# Environments
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+.conda/
+
+# IDE settings
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.project
+.pydevproject
+.spyderproject
+.spyproject
+
+# Jupyter Notebook
+.ipynb_checkpoints
+*.ipynb
+
+# mypy
+.mypy_cache/
+.dmypy.json
+dmypy.json
+
+# Deep Learning / Training related
+work_dirs/
+checkpoints/
+pretrained/
+*.pth
+*.pt
+*.ckpt
+*.onnx
+*.engine
+*.trt
+
+# TensorBoard logs
+tf_logs/
+tensorboard/
+runs/
+events.out.tfevents.*
+
+# Data files (usually too large for git)
+data/
+*.pkl
+*.npy
+*.npz
+*.h5
+*.hdf5
+
+# nuScenes related
+nuscenes/
+v1.0-mini/
+v1.0-trainval/
+v1.0-test/
+samples/
+sweeps/
+maps/
+
+# Log files
+*.log
+*.log.json
+logs/
+
+# Temporary files
+tmp/
+temp/
+*.tmp
+*.bak
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Profiling
+*.prof
+*.lprof
+
+# CUDA related
+*.cubin
+*.fatbin
