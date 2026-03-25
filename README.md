@@ -116,13 +116,13 @@ HAT is released under the MIT license.
 ## Citation
 If you find this project useful in your research, please consider citing by :smile_cat::
 ```
-@misc{li2025hat,
-      title={Rethinking the Spatio-Temporal Alignment of End-to-End 3D Perception}, 
-      author={Xiaoyu Li and Peidong Li and Xian Wu and Long Shi and Dedong Liu and Yitao Wu and Jiajia Fu and Dixiao Cui and Lijun Zhao and Lining Sun},
-      year={2025},
-      eprint={2512.23635},
-      archivePrefix={arXiv},
-      primaryClass={cs.CV},
-      url={https://arxiv.org/abs/2512.23635}, 
+@inproceedings{li2026rethinking,
+  title={Rethinking the Spatio-Temporal Alignment of End-to-End 3D Perception},
+  author={Li, Xiaoyu and Li, Peidong and Wu, Xian and Shi, Long and Liu, Dedong and Wu, Yitao and Fu, Jiajia and Cui, Dixiao and Zhao, Lijun and Sun, Lining},
+  booktitle={Proceedings of the AAAI Conference on Artificial Intelligence},
+  volume={40},
+  number={8},
+  pages={6513--6520},
+  year={2026}
 }
 ```
